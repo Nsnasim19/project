@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body {
+            background-color: #ffebef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-family: 'Courier New', monospace;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .image {
+            width: 200px;
+            height: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px pink;
+            transition: 0.5s;
+        }
+        .image:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px red;
+        }
+        .message {
+            font-size: 18px;
+            color: #d6336c;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            width: 0;
+            animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="love.jpeg" class="image" alt="Love Image">
+        <h2 class="message">I love you more than words can say... ❤️</h2>
+    </div>
+</body>
+</html>
